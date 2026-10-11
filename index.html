@@ -4,90 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vertical Dropdown Menu</title>
-    <style>
-        /* Đặt font chữ và reset căn lề cơ bản */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 50px;
-        }
-
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Định dạng cho các phần tử danh sách (li) */
-        #menu li {
-            list-style: none;
-            /* Bỏ dấu chấm tròn */
-            position: relative;
-            /* Để menu con dựa vào vị trí này */
-            width: 100px;
-            height: 30px;
-            padding: 0 20px;
-            background-color: black;
-            line-height: 30px;
-            cursor: pointer;
-            border-bottom: 1px solid #333;
-            /* Thêm đường kẻ ngang để phân biệt các mục */
-        }
-
-        /* Định dạng liên kết (a) bên trong danh sách */
-        #menu li a {
-            text-decoration: none;
-            /* Bỏ gạch chân */
-            color: white;
-            /* Đổi chữ sang màu trắng */
-            display: block;
-            /* Giúp vùng click chiếm toàn bộ không gian li */
-        }
-
-        /* Hiệu ứng đổi màu nền khi đưa chuột qua menu cha */
-        #menu li:hover {
-            background-color: #555;
-        }
-
-        /* Định dạng danh sách con (menu dropdown) */
-        #menu li ul {
-            position: absolute;
-            top: 0;
-            left: 140px;
-            /* Bằng đúng width (100) + padding trái (20) + padding phải (20) */
-            visibility: hidden;
-            /* Ẩn menu con theo mặc định */
-        }
-
-        /* Hiển thị danh sách con khi đưa chuột qua phần tử chứa nó */
-        #menu li:hover ul {
-            visibility: visible;
-        }
-    </style>
+    <title>Trang Chủ Giản Lược</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="main-header">
+        <h1>Tiêu đề Trang Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div id="menu">
-        <ul>
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Sản phẩm</a>
-                <!-- Danh sách con -->
-                <ul>
-                    <li><a href="#">Laptop</a></li>
-                    <li><a href="#">Điện thoại</a></li>
-                    <li><a href="#">Máy tính bảng</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Dịch vụ</a>
-                <!-- Danh sách con -->
-                <ul>
-                    <li><a href="#">Bảo hành</a></li>
-                    <li><a href="#">Sửa chữa</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Liên hệ</a></li>
-        </ul>
+    <div class="page-container">
+        <aside class="sidebar left-sidebar">
+            <h3>Sidebar Trái</h3>
+            <ul>
+                <li>Mục 1</li>
+                <li>Mục 2</li>
+                <li>Mục 3</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Nội dung chính của trang</h2>
+            <p>Đây là khu vực chứa nội dung quan trọng nhất của trang web. Chúng ta sẽ đặt các bài viết, sản phẩm, hoặc
+                thông tin chi tiết tại đây.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet. Magnam, cumque. Repellendus, ea!
+                Reprehenderit, quod. Ullam, quas. Dolorum, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod.
+                Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod.
+                Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet. Magnam, cumque. Repellendus, ea!
+                Reprehenderit, quod. Ullam, quas. Dolorum, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod.
+                Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod.
+                Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet. Magnam, cumque. Repellendus, ea!
+                Reprehenderit, quod. Ullam, quas. Dolorum, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod.
+                Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod.
+                Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet. Magnam, cumque. Repellendus, ea!
+                Reprehenderit, quod. Ullam, quas. Dolorum, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod.
+                Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod.
+                Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet. Magnam, cumque. Repellendus, ea!
+                Reprehenderit, quod. Ullam, quas. Dolorum, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod.
+                Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod.
+                Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo. Dolore, quod. Quos, nemo.</p>
+        </main>
+
+        <aside class="sidebar right-sidebar">
+            <h3>Sidebar Phải</h3>
+            <p>Đây là một sidebar khác, có thể chứa quảng cáo, bài viết liên quan hoặc các widget khác.</p>
+        </aside>
     </div>
 
 </body>
